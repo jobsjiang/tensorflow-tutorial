@@ -17,8 +17,8 @@ def fn(input,state):
 input = tf.zeros([10,10])
 state = [tf.zeros([10,10])] * 2
 
-cell(input,state)
-fn(input,state)
+# cell(input,state)
+# fn(input,state)
 
 dynamic_graph_time = timeit.timeit(lambda :cell(input,state),number=100)
 static_graph_time = timeit.timeit(lambda :fn(input,state),number=100)
