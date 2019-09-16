@@ -10,3 +10,7 @@ class Regressor(keras.layers.Layer):
         self.w = self.add_variable('meanless-name',[13,1])
         # [dim_out]
         self.b = self.add_variable('meanless-name',[1])
+
+        print(self.w.shape,self.b.shape)
+        print(type(self.w),tf.is_tensor(self.w),self.w.name)
+        print(type(self.b),tf.is_tensor(self.b),self.b.name)
