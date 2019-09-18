@@ -14,3 +14,7 @@ class Regressor(keras.layers.Layer):
         print(self.w.shape,self.b.shape)
         print(type(self.w),tf.is_tensor(self.w),self.w.name)
         print(type(self.b),tf.is_tensor(self.b),self.b.name)
+
+    def call(self,x):
+        x = tf.matmul(x,self.w) + self.b
+        return x
