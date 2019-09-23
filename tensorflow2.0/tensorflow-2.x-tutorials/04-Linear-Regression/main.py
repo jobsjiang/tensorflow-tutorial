@@ -18,3 +18,8 @@ class Regressor(keras.layers.Layer):
     def call(self,x):
         x = tf.matmul(x,self.w) + self.b
         return x
+
+def main():
+    tf.random.set_seed(22)
+    np.random.seed(22)
+    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
