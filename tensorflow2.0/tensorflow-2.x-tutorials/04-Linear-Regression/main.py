@@ -23,3 +23,4 @@ def main():
     tf.random.set_seed(22)
     np.random.seed(22)
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+    assert tf.__version__.startswith('2.')
