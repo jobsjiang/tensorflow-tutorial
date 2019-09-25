@@ -5,4 +5,3 @@ from tensorflow import keras
 import os
 
 class Regressor(keras.layers.Layer):
-    
