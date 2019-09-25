@@ -2,6 +2,7 @@
 import tensorflow as tf
 import timeit
 
+
 cell = tf.keras.layers.LSTMCell(10)
 
 @tf.function
