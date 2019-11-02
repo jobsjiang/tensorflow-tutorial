@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 from tensorflow import keras
 import os
-
+# 打印tensorflow版本
 print(tf.__version__)
 
 class Regressor(keras.layers.Layer):
